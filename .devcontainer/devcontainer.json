@@ -31,6 +31,9 @@
 		"5000": {
 			"label": "Hello Remote World",
 			"onAutoForward": "notify"
+		},
+		"9000": {
+			"label": "xiaoxiao"
 		}
 	},
 
