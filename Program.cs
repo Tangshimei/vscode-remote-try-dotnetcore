@@ -11,8 +11,7 @@ using Microsoft.AspNetCore.Http;
 namespace aspnetapp
 {
     public class Program
-    {
-        public static void Main(string[] args)
+    {        public static void Main(string[] args)
         {            
             var host = Host.CreateDefaultBuilder()    
                 .ConfigureWebHostDefaults(webBuilder => { 
@@ -26,4 +25,5 @@ namespace aspnetapp
             host.Build().Run();
         }
     }
+    
 }

@@ -29,6 +29,9 @@
 		"5000": {
 			"label": "Hello Remote World",
 			"onAutoForward": "notify"
+		},
+		"5560": {
+			"label": "rrrrw"
 		}
 	},
 
