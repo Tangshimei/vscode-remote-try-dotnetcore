@@ -25,5 +25,19 @@ namespace aspnetapp
                 });
             host.Build().Run();
         }
+        public static void t(string[] args)
+        {            
+            var host = Host.CreateDefaultBuilder()    
+                .ConfigureWebHostDefaults(webBuilder => { 
+                    webBuilder.Configure(app => { 
+                        app.UseHttpsRedirection()
+                            .Run(async context => {
+                                await context.Response.WriteAsync("Hello remote world from ASP.NET Core!");
+                            });
+                    });
+                });
+            host.Build().Run();
+        }
     }
+
 }
